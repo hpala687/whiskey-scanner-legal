@@ -1,0 +1,133 @@
+/* Whiskey Scanner Legal Pages — Shared Styles */
+:root {
+  --bg: #0b0c0f;
+  --elev: #11131a;
+  --text: #e8ecf1;
+  --muted: #b7c1cc;
+  --link: #8ab4ff;
+  --accent: #f5c56a;
+  --border: #222738;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  background: linear-gradient(180deg, var(--bg), var(--elev));
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header.site {
+  position: sticky;
+  top: 0;
+  backdrop-filter: saturate(1.2) blur(12px);
+  background: color-mix(in oklab, var(--bg) 78%, transparent);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: radial-gradient(circle at 30% 30%, var(--accent), #9c6f2e 60%, #5a3b0c 100%);
+  border: 1px solid #3a2a10;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-right: 16px;
+  font-weight: 500;
+}
+nav a.active { color: var(--text); }
+nav a:hover, nav a:focus-visible { color: var(--link); }
+
+main {
+  background: color-mix(in oklab, var(--elev) 92%, black 8%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  margin-top: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+h1 { font-size: 1.9rem; margin: 0 0 12px; }
+h2 { font-size: 1.25rem; margin: 28px 0 8px; }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; color: var(--muted); }
+p { line-height: 1.6; color: var(--text); margin: 12px 0; }
+small, .muted { color: var(--muted); }
+
+ul { padding-left: 18px; }
+li { margin: 6px 0; }
+
+a { color: var(--link); }
+a:hover, a:focus-visible { text-decoration: underline; }
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #1b2235;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.callout {
+  border-left: 3px solid var(--accent);
+  background: color-mix(in oklab, var(--elev) 85%, black 15%);
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+
+.footer {
+  margin: 18px 0 0;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+code, kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .95em; }
+
+@media (max-width: 640px) {
+  main { padding: 20px; }
+  nav a { margin-right: 12px; }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f5f7fb;
+    --elev: #ffffff;
+    --text: #111318;
+    --muted: #505a66;
+    --link: #1a59ff;
+    --accent: #9b6b00;
+    --border: #e6e9f0;
+  }
+  .logo { border-color: #e0d5c0; }
+}
+
+/* Print friendly */
+@media print {
+  header.site, nav { display: none; }
+  main { box-shadow: none; border: none; }
+}
+
