@@ -17,10 +17,10 @@
 
     <div class="wrap">
       <main role="main">
-        <div class="badge">Last updated: 31 Aug 2026</div>
+        <div class="badge">Last updated: 22 Sep 2026</div>
         <h1>Privacy Policy</h1>
         <p class="muted">This Privacy Policy explains how Whisky Label Scanner (“the App”, “we”, “us”) collects, uses, shares, and deletes information.</p>
-        <p class="callout"><strong>At a glance:</strong> We do not sell personal data. Account, scan, purchase, and optional advertising-measurement data are used to provide and improve the App. Advertising measurement is disabled unless you explicitly allow it in the App.</p>
+        <p class="callout"><strong>At a glance:</strong> We do not sell personal data. Account, scan, and purchase data are used to provide and improve the App. You can turn off advertising measurement in Settings.</p>
 
         <h2 id="data-we-collect">Information We Collect</h2>
         <h3>Account and profile information</h3>
@@ -30,14 +30,14 @@
         <p>When you choose to analyze a whisky label, the selected image and related scan data may be uploaded to Firebase and our processing providers to produce and store the result. This information can include the image, recognized label text, analysis results, timestamps, and saved journal data. Camera preview frames are not uploaded merely because the camera is open.</p>
 
         <h3>Editorial reviews</h3>
-        <p>The App displays read-only editorial whisky reviews sourced from The Whisky Edition. Viewing a feed or review may create a product-interaction event if you have allowed advertising measurement. Editorial reviews are external content and are not user endorsements.</p>
+        <p>The App displays read-only editorial whisky reviews sourced from The Whisky Edition. Viewing a feed or review may create a product-interaction event unless you have opted out of advertising measurement in Settings. Editorial reviews are external content and are not user endorsements.</p>
 
         <h3>Purchases</h3>
         <p>Apple processes payments. RevenueCat processes transaction identifiers, product identifiers, entitlement and subscription status, purchase dates, renewal, cancellation, expiration, and billing-status events. We do not receive your full payment-card number.</p>
 
         <h3>Optional advertising measurement</h3>
-        <p>After you choose “Allow measurement,” AppsFlyer may process device identifiers, attribution data, and limited product-interaction events such as tutorial completion, first scan, review views, paywall views, and checkout initiation. Revenue events are sent server-to-server by RevenueCat to avoid duplicate reporting. We do not send scan contents, review text, email addresses, or other free-form personal content in these events.</p>
-        <p>If you decline the in-app choice, AppsFlyer does not start and no AppsFlyer identifier is sent to RevenueCat. If you allow measurement but deny or restrict Apple’s App Tracking Transparency permission, advertising identifiers and partner sharing are disabled and measurement is limited to privacy-preserving methods supported by Apple. You can withdraw the in-app choice in Settings; Apple’s system permission is managed in iOS Settings.</p>
+        <p>AppsFlyer may process attribution data and limited product-interaction events such as tutorial completion, paywall views, and checkout initiation. Revenue events are sent server-to-server by RevenueCat to avoid duplicate reporting. We do not send scan contents, review text, email addresses, or other free-form personal content in these events.</p>
+        <p>The App requests Apple’s App Tracking Transparency (ATT) permission after onboarding begins. If ATT is denied or restricted, the App does not collect the advertising identifier (IDFA), but AppsFlyer measurement may continue without it. The App does not present a separate advertising-measurement permission prompt. You can opt out of advertising measurement in Settings; this stops AppsFlyer measurement and partner sharing without affecting access to the App. ATT permission can be changed in iOS Settings.</p>
 
         <h3>Diagnostics and support</h3>
         <p>Apple and our service providers may process crash, device, operating-system, app-version, and security diagnostics. If you contact support, we process your email address and the information you include in the request.</p>
@@ -46,25 +46,25 @@
         <ul>
           <li>Authenticate users and provide scanning, analysis, journal, editorial review, purchase, and restore features.</li>
           <li>Maintain subscription entitlements, prevent fraud and abuse, secure the service, and troubleshoot failures.</li>
-          <li>Measure campaign performance only when the user has granted the applicable consent.</li>
+          <li>Measure campaign performance subject to your Settings choice and applicable device permissions.</li>
           <li>Respond to support, privacy, and account-deletion requests and comply with legal obligations.</li>
         </ul>
 
         <h2 id="providers">Service Providers and Sharing</h2>
-        <p>We use Apple, Firebase/Google, RevenueCat, and—only after measurement consent—AppsFlyer. These providers process data under their own terms and privacy commitments to deliver authentication, hosting, storage, purchases, subscriptions, diagnostics, security, and attribution services. AppsFlyer may provide permitted attribution results to enabled advertising partners such as Meta or X under the consent and ATT choices described above.</p>
+        <p>We use Apple, Firebase/Google, RevenueCat, and AppsFlyer. These providers process data under their own terms and privacy commitments to deliver authentication, hosting, storage, purchases, subscriptions, diagnostics, security, and attribution services. AppsFlyer may provide permitted attribution results to enabled advertising partners such as Meta or X only when the applicable privacy choices allow partner sharing.</p>
         <p>We do not sell personal data. We may disclose information when required by law, to protect users or the service, or as part of a business transaction subject to appropriate safeguards.</p>
 
         <h2 id="retention">Retention and International Processing</h2>
         <p>Account, analysis, image, and purchase records are retained while needed to provide the App and for security, fraud prevention, accounting, legal obligations, and dispute handling. Provider records and backups may remain for a limited period after deletion. Service providers may process data outside your country using contractual safeguards and other lawful transfer mechanisms.</p>
 
         <h2 id="deletion">Account and Data Deletion</h2>
-        <p>You can request permanent account deletion in the App under Settings → Delete My Account. The process removes your Firebase profile, analyses, and uploaded files; removes personal fields from or hides eligible legacy community contributions; queues connected-provider deletion requests; and deletes the Firebase Authentication account. Some provider operations complete asynchronously, and limited records may be retained where legally required. You may also contact us for access, correction, deletion, or objection requests.</p>
+        <p>You can request permanent account deletion in the App under Settings → Delete My Account. The process removes your Firebase profile, analyses, and uploaded files; removes personal fields from or hides eligible legacy community contributions; and deletes the Firebase Authentication account. Apple and other service providers may retain limited purchase, security, attribution, or backup records under their own legal and operational retention requirements. Contact us for access, correction, deletion, objection, or help with provider-related requests.</p>
 
         <h2 id="permissions">Device Permissions</h2>
         <ul>
           <li><strong>Camera:</strong> used to capture whisky labels for scanning.</li>
           <li><strong>Photo Library:</strong> used only when you choose to import or save an image.</li>
-          <li><strong>Tracking:</strong> requested only after the App’s measurement-consent choice and used as described above.</li>
+          <li><strong>Tracking:</strong> ATT is requested after onboarding begins. Access to the advertising identifier depends on the resulting permission; measurement may continue without that identifier. The in-app Settings opt-out stops AppsFlyer measurement and partner sharing.</li>
         </ul>
 
         <h2 id="security">Security</h2>
